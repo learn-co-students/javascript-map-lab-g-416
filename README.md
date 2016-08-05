@@ -33,7 +33,7 @@ dancing friend up here, but the stripes don't have any color yet. Let's fix that
 * The value of this variable is the mapped `zebraStripes` array;
 * Return each stripe object with the `stripe` filled in with either a `'black'` or `'white'` string.
 * A stripe is black when the stripe's index is even, and it's white if a stripe's index is odd.
-* (Hint: `.map()` takes more than one parameter)
+* (Hint: the callback we pass to `.map()` takes more than one parameter)
 * The original objects in the `zebraStripes` array must **not** be modified, so be sure to use `Object.assign()`
 
 ## Resources
