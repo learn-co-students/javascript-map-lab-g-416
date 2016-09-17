@@ -3,15 +3,12 @@
 
 ## Overview 
 
-The `.map()` function allows us to transform elements in an array from one value to another, we can take a look
-at some practical examples. There's no need to implement your own `map()` function, since we can readily use the
-`Array.prototype.map()` method.
+The `.map()` function allows us to transform elements in an array from one value to another, we can take a look at some practical examples. There's no need to implement your own `map()` function, since we can readily use the `Array.prototype.map()` method.
 
 ## Uncovering alliances
 ![Decepticons](https://media0.giphy.com/media/GsrGBNNkXAfoA/200.gif)
 
-Imagine we're a top-end cyber researcher for DARPA. The military has given us a list of robots. We also have a manifest
-of all known Decepticon robot names. Our job is to go through the list of robots, and set their alliance accordingly.
+Imagine we're a top-end cyber researcher for DARPA. The military has given us a list of robots. We also have a manifest of all known Decepticon robot names. Our job is to go through the list of robots, and set their alliance accordingly.
 
 * Create a new variable called `sortedRobots`;
 * The value of this variable is the mapped `robots` array;
@@ -36,3 +33,5 @@ dancing friend up here, but the stripes don't have any color yet. Let's fix that
 ## Resources
 
 * [MDN: Array.prototype.map()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/javascript-map-lab'>Map Lab</a> on Learn.co and start learning to code for free.</p>
