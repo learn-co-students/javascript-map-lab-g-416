@@ -20,8 +20,7 @@ Imagine we're a top-end cyber researcher for DARPA. The military has given us a 
 ## The White Stripes
 ![The coolest zebra.](https://media.giphy.com/media/bHoFqabfGJLpu/giphy.gif)
 
-A zebra without stripes is just a silly looking horse. We have a `zebraStripes` array that represents the stripes of our
-dancing friend up here, but the stripes don't have any color yet. Let's fix that!
+A zebra without stripes is just a silly looking horse. We have a `zebraStripes` array that represents the stripes of our dancing friend up here, but the stripes don't have any color yet. Let's fix that!
 
 * Create a new variable called `coloredZebraStripes`;
 * The value of this variable is the mapped `zebraStripes` array;
