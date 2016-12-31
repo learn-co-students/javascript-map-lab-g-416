@@ -1,3 +1,4 @@
+
 const knownDecepticons = ['Megatron', 'Skywarp', 'Laserbeak', 'Barricade'];
 
 const robots = [
@@ -22,7 +23,6 @@ const zebraStripes = [
   { width: 7.31, color: null },
 ];
 
-'use strict'
 const sortedRobots = robots.map((robot) => {
   if (knownDecepticons.includes(robot.name)) {
     return Object.assign({}, robot, {
@@ -35,8 +35,14 @@ const sortedRobots = robots.map((robot) => {
   }
 })
 
-const coloredZebraStripes = zebraStripes.map((zebra, index) => {
-  return Object.assign({}, zebra, {
-    color: index % 2 === 0 ? 'black' : 'white'
-  })
-})
+var coloredZebraStripes = zebraStripes.map((stripe, index) => {
+  if (index % 2 === 0){
+    return Object.assign({}, stripe, {
+      color: 'black'
+    })
+  } else {
+    return Object.assign({}, stripe, {
+      color: 'white'
+    });
+  }
+});
