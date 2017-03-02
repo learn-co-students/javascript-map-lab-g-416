@@ -19,5 +19,5 @@ const zebraStripes = [
   { width: 8.34, color: null },
   { width: 7.77, color: null },
   { width: 0.59, color: null },
-  { width: 7.31, color: null },
+  { width: 7.31, color: null }
 ];
