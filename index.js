@@ -21,3 +21,17 @@ const zebraStripes = [
   { width: 0.59, color: null },
   { width: 7.31, color: null }
 ];
+
+const sortedRobots = robots.map(bot => {
+  const isDecepticon = knownDecepticons.includes(bot.name);
+  return Object.assign({}, bot, {
+    alliance: isDecepticon ? 'decepticon' : 'autobot'
+  });
+});
+
+const coloredZebraStripes = zebraStripes.map((s, i) => {
+  const isEven = (i % 2) === 0;
+  return Object.assign({}, s, {
+    color: isEven ? 'black' : 'white'
+  });
+});
