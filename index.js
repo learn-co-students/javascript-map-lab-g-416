@@ -26,7 +26,7 @@ const sortedRobots = robots.map((robot) => {
   let newRobot;
   if (knownDecepticons.includes(robot.name)) {
     newRobot = Object.assign({}, robot);
-    newRobot.alliance = "deception";
+    newRobot.alliance = "decepticon";
   } else {
     newRobot = Object.assign({}, robot);
     newRobot.alliance = "autobot";
@@ -38,13 +38,13 @@ const coloredZebraStripes = zebraStripes.map((stripe, index) => {
   const isEven = function (x) {
     return !(x & 1);
   };
-  let newStrip;
+  let newStripe;
   if (isEven(index)) {
-    newStrip = Object.assign({}, stripe);
+    newStripe = Object.assign({}, stripe);
     newStripe.color = "black";
   } else {
-    newStrip = Object.assign({}, stripe);
+    newStripe = Object.assign({}, stripe);
     newStripe.color = "white";
   }
-  return stripe;
+  return newStripe;
 });
