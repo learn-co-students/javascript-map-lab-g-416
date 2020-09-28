@@ -21,3 +21,11 @@ const zebraStripes = [
   { width: 0.59, color: null },
   { width: 7.31, color: null }
 ];
+
+// Create a new variable called sortedRobots; []
+// The value of this variable is the mapped robots array; []
+// Return each robot object with the alliance filled in with either an 'autobot' or 'decepticon' string. []
+// To figure out a robot's alliance, check if their name exists in the knownDecepticons array. 
+// (Hint: use Array.prototype.includes to easily check if an element exists in an array.) []
+// The original objects in the robots array must not be modified, so be sure to use Object.assign() defensively update []
+
