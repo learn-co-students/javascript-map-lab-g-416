@@ -1,14 +1,14 @@
-const knownDecepticons = ['Megatron', 'Skywarp', 'Laserbeak', 'Barricade'];
+const knownDecepticons = ["Megatron", "Skywarp", "Laserbeak", "Barricade"];
 
 const robots = [
-  { name: 'Bumblebee', alliance: null },
-  { name: 'Laserbeak', alliance: null },
-  { name: 'Barricade', alliance: null },
-  { name: 'Optimus Prime', alliance: null },
-  { name: 'Skywarp', alliance: null },
-  { name: 'Megatron', alliance: null },
-  { name: 'Ironhide', alliance: null },
-  { name: 'Ratchet', alliance: null }
+  { name: "Bumblebee", alliance: null },
+  { name: "Laserbeak", alliance: null },
+  { name: "Barricade", alliance: null },
+  { name: "Optimus Prime", alliance: null },
+  { name: "Skywarp", alliance: null },
+  { name: "Megatron", alliance: null },
+  { name: "Ironhide", alliance: null },
+  { name: "Ratchet", alliance: null },
 ];
 
 const zebraStripes = [
@@ -19,5 +19,18 @@ const zebraStripes = [
   { width: 8.34, color: null },
   { width: 7.77, color: null },
   { width: 0.59, color: null },
-  { width: 7.31, color: null }
+  { width: 7.31, color: null },
 ];
+
+const sortedRobots = robots.map((robot) => {
+  return Object.assign({}, robot, {
+    alliance: knownDecepticons.includes(robot.name) ? "decepticon" : "autobot",
+  });
+});
+
+const coloredZebraStripes = zebraStripes.map((zebra, i) => {
+  const isEven = i % 2 === 0 ? true : false;
+  return Object.assign({}, zebra, {
+    color: isEven ? "black" : "white",
+  });
+});
