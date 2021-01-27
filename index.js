@@ -22,24 +22,27 @@ const zebraStripes = [
   { width: 7.31, color: null }
 ];
 
-const sortedRobots=robots.map(function(robot){
-  newObject=Object.assign({},robot)
-  if (knownDecepticons.includes(robot)){
-    newObject[alliance]="deception"
-  }else {
-    newObject[alliance]="autobot"
-  }
-  return newObject
-})
+// const sortedRobots=robots.map(function(robot){
+//   newObject=Object.assign({},robot)
+//   if (knownDecepticons.includes(robot)){
+//     newObject.alliance="decepticon"
+//     return newObject
+//   }else {
+//     newObject.alliance="autobot"
+//     return newObject
+//   }
+// })
 
 
-const coloredZebraStripes=zebraStripes.map(function(zebra){
-let newZebra=Object.assign({},zebra)
-if (zebra[width]%2==0){
-  newZebra[color]="black"
-}
-else {
-newZebra[color]="white"
-}
-return newZebra
-})
+// const coloredZebraStripes=zebraStripes.map(function(zebra){
+// let newZebra=Object.assign({},zebra)
+// console.log(zebra)
+// // if (zebra[width]%2==0){
+// //   zebra[color]="black"
+// // }
+// // else {
+// // zebra[color]="white"
+// // }
+// // return newZebra
+// })
+
