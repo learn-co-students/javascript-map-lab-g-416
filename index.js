@@ -34,5 +34,9 @@ const sortedRobots=robots.map(function(robot){
 
 
 const coloredZebraStripes=zebraStripes.map(function(zebra){
+let newZebra=Object.assign({},zebra)
+if (zebra[width]){
+  
+}
 
 })
