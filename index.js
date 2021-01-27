@@ -31,3 +31,8 @@ const sortedRobots=robots.map(function(robot){
   }
   return newObject
 })
+
+
+const coloredZebraStripes=zebraStripes.map(function(zebra){
+
+})
