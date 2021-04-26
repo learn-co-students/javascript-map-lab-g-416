@@ -21,3 +21,19 @@ const zebraStripes = [
   { width: 0.59, color: null },
   { width: 7.31, color: null }
 ];
+
+
+const sortedRobots = robots.map(function (robot,i,robots) {
+    return Object.assign({}, robot, {
+      alliance: knownDecepticons.includes(robot.name) ? 'decepticon' : 'autobot'
+    });
+});
+
+
+
+const coloredZebraStripes = zebraStripes.map(function (zebraStripe,i,zebraStripes) {
+  return Object.assign({}, zebraStripe, {
+    color: (i % 2 == 0) ? 'black' : 'white'
+  });
+});
+
